@@ -179,7 +179,6 @@ body::-webkit-scrollbar
 #box-titre 
 {
 	grid-area: Titre;
-	margin-left: 100px;
 	margin-top: 200px;
 	margin-right: 350px;
 	/* animation: debut1 1.3s ease-out; */
@@ -1049,9 +1048,13 @@ body::-webkit-scrollbar
 	}
 	#box-titre
 	{
-		width: 360px;
+		width: 330px;
 		margin-top: 10px;
-		margin-left: 60px;
+		margin-left: 30px;
+	}
+	.titre
+	{
+		width: 220px;
 	}
 	#Contact
 	{
