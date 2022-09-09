@@ -17,23 +17,44 @@
     <link rel="stylesheet" media="" href="style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script defer src="app.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+            var v = document.getElementById("collider-titre");
+            if (v.className === "boxx-titre") {
+                v.className += " responsive_2";
+            } else {
+                v.className = "boxx-titre";
+            }
+        }
+    </script>
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar" class="nav">
         <ul class="nav-list">
-            <li class="nav-item aa"><a href="https://pozayy.github.io/Pozayy/" class="pozay">Pozay</a></li>
-            <li class="nav-item bb" ><a href="https://pozayy.github.io/Pozayy/" class="accueil">Accueil</a></li>
-            <li class="nav-item cc "><a href="#" class="propos">À Propos</a></li>
-            <li class="nav-item dd"><a href="#" class="contact">Contact</a></li>
+            <div class="container-list">
+                <li class="nav-item zz"><a href="https://pozayy.github.io/Pozayy/" class="pozay">Pozay</a></li>
+                <li class="nav-item bb" ><a href="https://pozayy.github.io/Pozayy/" class="accueil">Accueil</a></li>
+                <li class="nav-item cc "><a href="#" class="propos">À Propos</a></li>
+                <li class="nav-item dd"><a href="#" class="contact">Contact</a></li>
+            </div>
+            <li class="nav-item ee"><a class="icone" style="font-size:30px" onclick="myFunction()">&#9776;</a></li>
         </ul>
     </nav>
 
     <p class="bonjour"></p>
 
     <div class="tout">
-        <header id="box-titre">
-            <h1 class="titre">Bienvenue sur Mon Portefolio</h1>
-        </header>
+        <div id="collider-titre" class="boxx-titre">
+            <header id="box-titre">
+                <h1 class="titre">Bienvenue sur Mon Portefolio</h1>
+            </header>
+        </div>
 
         <aside id="Contact">
             <div class="navv">
