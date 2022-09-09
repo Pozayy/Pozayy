@@ -8,6 +8,7 @@
 
 body 
 {
+	width: 100%;
 	background-image: linear-gradient(to left,#522c74, #7e3d74);
 	height: 100vh;
 	font-weight: bolder;
@@ -959,6 +960,17 @@ body::-webkit-scrollbar
 
 @media screen and (max-width: 400px)
 {
+	.tout 
+	{
+		display: grid;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		grid-template-columns: 100px 100px;
+		grid-template-rows: 80px 300px;
+		grid-template-areas: "Titre Contact"
+							"Titre Contact"
+							"Titre Contact"
+	}
 	.ee
 	{
 		display: block;
@@ -1057,6 +1069,7 @@ body::-webkit-scrollbar
 	}
 	.container-manger
 	{
+		width: 360px;
 		justify-content: flex-start;
 		align-items: flex-start;
 		margin-left: 0;
